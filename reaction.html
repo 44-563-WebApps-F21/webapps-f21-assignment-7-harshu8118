@@ -29,15 +29,12 @@
   </body>
   <script>
     var myTime = undefined;
-
     function recordReact() {
       myTime = Date.now();
       console.log(myTime);
     }
-
     function startTime() {
-      let counter = Math.round(Math.random() * (10 - 2) + 2);
-
+      let counter = 0
       for (let index = 0; index < counter; index++) {
         setTimeout(function () {
           document.getElementById("countdown").innerHTML = "Count " + index;
